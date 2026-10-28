@@ -18,7 +18,7 @@ export const UploadDicomModal: React.FC<UploadDicomModalProps> = ({
   initialFile,
 }) => {
   const [patientId, setPatientId] = useState('P-001247');
-  const [patientName, setPatientName] = useState('Michael Turner');
+  const [patientName, setPatientName] = useState('Rajesh Kumar');
   const [patientEmail, setPatientEmail] = useState('');
   const [doctorEmail, setDoctorEmail] = useState('');
   const [modality, setModality] = useState<'XR' | 'CT' | 'MRI'>('XR');
@@ -125,7 +125,7 @@ export const UploadDicomModal: React.FC<UploadDicomModalProps> = ({
           hour: '2-digit',
           minute: '2-digit',
         }),
-        doctor: 'Dr. Rohan',
+        doctor: 'Dr. Harsh',
         gradCamOn: true,
         aiModel: 'CNN-V4',
         acquiredTime: 'Just Now',
@@ -201,7 +201,7 @@ export const UploadDicomModal: React.FC<UploadDicomModalProps> = ({
                 type="email"
                 value={patientEmail}
                 onChange={(e) => setPatientEmail(e.target.value)}
-                placeholder="e.g. michael.turner@example.com"
+                placeholder="e.g. rajesh.kumar@example.com"
                 className="w-full bg-[#050505] border border-[#1a1a1a] rounded-xl p-2.5 text-white font-mono text-xs outline-none focus:border-[#262626]"
               />
             </div>

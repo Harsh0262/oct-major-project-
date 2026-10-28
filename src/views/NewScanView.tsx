@@ -11,7 +11,7 @@ interface NewScanViewProps {
 }
 
 export const NewScanView: React.FC<NewScanViewProps> = ({ onAddScan }) => {
-  const [patientName, setPatientName] = useState('Michael Turner');
+  const [patientName, setPatientName] = useState('Rajesh Kumar');
   const [patientId, setPatientId] = useState('P-001247');
   const [modality, setModality] = useState<'XR' | 'CT' | 'MRI'>('XR');
   const [clinicalNotes, setClinicalNotes] = useState('');
@@ -87,7 +87,7 @@ export const NewScanView: React.FC<NewScanViewProps> = ({ onAddScan }) => {
           hour: '2-digit',
           minute: '2-digit',
         }),
-        doctor: 'Dr. Rohan',
+        doctor: 'Dr. Harsh',
         gradCamOn: true,
         aiModel: 'CNN-V4',
         acquiredTime: 'Just Now',

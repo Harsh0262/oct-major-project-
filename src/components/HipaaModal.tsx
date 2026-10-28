@@ -66,7 +66,7 @@ export const HipaaModal: React.FC<HipaaModalProps> = ({ isOpen, onClose }) => {
             </p>
             <div className="bg-slate-950 border border-slate-800 rounded-xl p-3 space-y-2 font-mono text-[10px] text-slate-400">
               <div className="flex justify-between border-b border-slate-900 pb-1">
-                <span>[2026-08-01 18:04] Access Granted: Dr. Rohan (NPI #1029384)</span>
+                <span>[2026-08-01 18:04] Access Granted: Dr. Harsh (NPI #1029384)</span>
                 <span className="text-lime-400">VERIFIED</span>
               </div>
               <div className="flex justify-between border-b border-slate-900 pb-1">

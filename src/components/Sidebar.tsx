@@ -147,10 +147,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
         <div className="flex items-center justify-between p-2 rounded-lg bg-[#050505] border border-[#1a1a1a]">
           <div className="flex items-center gap-2.5">
             <div className="w-7 h-7 rounded-full bg-[#111111] border border-[#262626] flex items-center justify-center font-mono text-[10px] text-[#737373]">
-              DR
+              DH
             </div>
             <div>
-              <p className="text-xs font-medium text-white">Dr. Rohan</p>
+              <p className="text-xs font-medium text-white">Dr. Harsh</p>
               <p className="text-[10px] text-[#737373]">Radiology Lead</p>
             </div>
           </div>

@@ -21,7 +21,7 @@ export const CreatePatientModal: React.FC<CreatePatientModalProps> = ({
   const [phone, setPhone] = useState('+1 (555) 019-2834');
   const [email, setEmail] = useState('');
   const [doctorEmail, setDoctorEmail] = useState('');
-  const [assignedDoctor, setAssignedDoctor] = useState('Dr. Rohan');
+  const [assignedDoctor, setAssignedDoctor] = useState('Dr. Harsh');
 
   if (!isOpen) return null;
 
@@ -80,7 +80,7 @@ export const CreatePatientModal: React.FC<CreatePatientModalProps> = ({
               required
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder="e.g. Robert Vance"
+              placeholder="e.g. Aarav Sharma"
               className="w-full bg-slate-950 border border-slate-800 rounded-lg p-2.5 text-white outline-none focus:border-lime-500"
             />
           </div>
@@ -137,7 +137,7 @@ export const CreatePatientModal: React.FC<CreatePatientModalProps> = ({
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="e.g. patient@example.com"
+                placeholder="e.g. aarav.sharma@example.com"
                 className="w-full bg-slate-950 border border-slate-800 rounded-lg p-2.5 text-white outline-none focus:border-lime-500 font-mono text-xs"
               />
             </div>
@@ -147,7 +147,7 @@ export const CreatePatientModal: React.FC<CreatePatientModalProps> = ({
                 type="email"
                 value={doctorEmail}
                 onChange={(e) => setDoctorEmail(e.target.value)}
-                placeholder="e.g. dr.rohan@medvision.health"
+                placeholder="e.g. dr.harsh@medvision.health"
                 className="w-full bg-slate-950 border border-slate-800 rounded-lg p-2.5 text-white outline-none focus:border-lime-500 font-mono text-xs"
               />
             </div>
@@ -170,9 +170,10 @@ export const CreatePatientModal: React.FC<CreatePatientModalProps> = ({
                 onChange={(e) => setAssignedDoctor(e.target.value)}
                 className="w-full bg-slate-950 border border-slate-800 rounded-lg p-2.5 text-white outline-none focus:border-lime-500"
               >
-                <option value="Dr. Rohan">Dr. Rohan</option>
-                <option value="Dr. Meera">Dr. Meera</option>
+                <option value="Dr. Harsh">Dr. Harsh</option>
+                <option value="Dr. Nitin">Dr. Nitin</option>
                 <option value="Dr. Amit">Dr. Amit</option>
+                <option value="Dr. Vishal">Dr. Vishal</option>
               </select>
             </div>
           </div>

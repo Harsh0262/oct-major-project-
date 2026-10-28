@@ -125,7 +125,7 @@ export const PatientsView: React.FC<PatientsViewProps> = ({
 
     // Generate historical baseline and previous clinical events for longitudinal timeline view
     if (selectedPatient.id === 'P-001247') {
-      // Michael Turner Timeline
+      // Rajesh Kumar Timeline
       events.push(
         {
           id: 'hist-mt-1',
@@ -143,7 +143,7 @@ export const PatientsView: React.FC<PatientsViewProps> = ({
           affectedRegion: 'Lower Right & Left Lungs',
           summary: 'Increased interstitial markings with early basilar opacity. Grad-CAM indicates neural heat spots near posterior segment.',
           recommendedAction: 'Prescribe outpatient oral antibiotics; schedule repeat X-Ray if dyspnea worsens.',
-          doctor: 'Dr. Rohan',
+          doctor: 'Dr. Harsh',
           thumbnailUrl: generateMedicalScanSvg('ct_scan', true),
           topPredictions: [
             { condition: 'Infiltration', confidence: 88.4 },
@@ -167,7 +167,7 @@ export const PatientsView: React.FC<PatientsViewProps> = ({
           affectedRegion: 'Perihilar Regions',
           summary: 'Clear cardiac silhouette. Mild bronchial wall thickening without focal consolidation.',
           recommendedAction: 'Routine annual follow-up; smoking cessation counseling advised.',
-          doctor: 'Dr. Meera',
+          doctor: 'Dr. Nitin',
           thumbnailUrl: generateMedicalScanSvg('chest_xray', false),
           topPredictions: [
             { condition: 'Normal', confidence: 76.5 },
@@ -188,11 +188,11 @@ export const PatientsView: React.FC<PatientsViewProps> = ({
           affectedRegion: 'Systemic Pulmonary',
           summary: 'Patient presented with seasonal cough. SpO2 98% on room air. Vitals stable.',
           recommendedAction: 'Baseline imaging ordered.',
-          doctor: 'Dr. Rohan',
+          doctor: 'Dr. Harsh',
         }
       );
     } else if (selectedPatient.id === 'P-001246') {
-      // Angela Smith Timeline
+      // Priya Sharma Timeline
       events.push(
         {
           id: 'hist-as-1',
@@ -210,7 +210,7 @@ export const PatientsView: React.FC<PatientsViewProps> = ({
           affectedRegion: 'Right Upper Lobe',
           summary: '6mm focal opacity noted in right upper zone. AI confidence stable compared to prior study.',
           recommendedAction: 'Order High-Resolution CT for volumetric characterization.',
-          doctor: 'Dr. Meera',
+          doctor: 'Dr. Nitin',
           thumbnailUrl: generateMedicalScanSvg('chest_xray', true),
           topPredictions: [
             { condition: 'Nodule', confidence: 84.1 },
@@ -233,7 +233,7 @@ export const PatientsView: React.FC<PatientsViewProps> = ({
           affectedRegion: 'Right Upper Lobe',
           summary: 'Calcified granulomatous lesion noted in RUL. No associated hilar adenopathy.',
           recommendedAction: 'Follow-up radiograph in 6 months.',
-          doctor: 'Dr. Meera',
+          doctor: 'Dr. Nitin',
           thumbnailUrl: generateMedicalScanSvg('chest_xray', false),
           topPredictions: [
             { condition: 'Granuloma', confidence: 79.2 },
@@ -242,7 +242,7 @@ export const PatientsView: React.FC<PatientsViewProps> = ({
         }
       );
     } else if (selectedPatient.id === 'P-001245') {
-      // James Brown Timeline
+      // Arjun Patel Timeline
       events.push(
         {
           id: 'hist-jb-1',
@@ -260,7 +260,7 @@ export const PatientsView: React.FC<PatientsViewProps> = ({
           affectedRegion: 'Left Temporal Lobe',
           summary: 'Subtle hypodensity in left temporal parenchyma with minimal mass effect.',
           recommendedAction: 'Urgent contrast-enhanced MRI Brain requested.',
-          doctor: 'Dr. Sarah',
+          doctor: 'Dr. Vishal',
           thumbnailUrl: generateMedicalScanSvg('ct_scan', true),
           topPredictions: [
             { condition: 'Neoplasm', confidence: 87.6 },
@@ -281,7 +281,7 @@ export const PatientsView: React.FC<PatientsViewProps> = ({
           affectedRegion: 'Cranial / Neurological',
           summary: 'Patient reports progressive left temporal headaches over 3 weeks.',
           recommendedAction: 'Diagnostic Head CT scheduled.',
-          doctor: 'Dr. Sarah',
+          doctor: 'Dr. Vishal',
         }
       );
     } else {
@@ -921,4 +921,3 @@ export const PatientsView: React.FC<PatientsViewProps> = ({
     </div>
   );
 };
-

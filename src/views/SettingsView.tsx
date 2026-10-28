@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Settings, ShieldCheck, User, Save, Bell, Moon } from 'lucide-react';
 
 export const SettingsView: React.FC = () => {
-  const [doctorName, setDoctorName] = useState('Dr. Rohan');
+  const [doctorName, setDoctorName] = useState('Dr. Harsh');
   const [npi, setNpi] = useState('1029384819');
   const [pacsHost, setPacsHost] = useState('pacs.hospital.internal');
   const [autoGradCam, setAutoGradCam] = useState(true);

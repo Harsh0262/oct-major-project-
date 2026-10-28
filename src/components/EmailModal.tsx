@@ -48,7 +48,7 @@ export const EmailModal: React.FC<EmailModalProps> = ({
 
       // Default emails
       const defaultP = patient?.email || scan?.patientEmail || report?.patientEmail || (scan ? `${scan.patientName.toLowerCase().replace(/\s+/g, '.')}@example.com` : 'patient@example.com');
-      const docName = scan?.doctor || patient?.assignedDoctor || 'Dr. Rohan';
+      const docName = scan?.doctor || patient?.assignedDoctor || 'Dr. Harsh';
       const defaultD = patient?.doctorEmail || scan?.doctorEmail || report?.doctorEmail || `${docName.toLowerCase().replace(/dr\.\s*/g, '').replace(/\s+/g, '.')}@medvision.health`;
 
       setPatientEmail(defaultP);
@@ -328,7 +328,7 @@ export const EmailModal: React.FC<EmailModalProps> = ({
                     setPatientEmail(e.target.value);
                     setValidationError(null);
                   }}
-                  placeholder="e.g. michael.turner@example.com"
+                  placeholder="e.g. rajesh.kumar@example.com"
                   className="w-full bg-[#050505] border border-[#1a1a1a] rounded-xl p-2.5 text-white font-mono outline-none focus:border-[#262626]"
                 />
               ) : recipientType === 'doctor' ? (
@@ -535,4 +535,3 @@ export const EmailModal: React.FC<EmailModalProps> = ({
     </div>
   );
 };
-

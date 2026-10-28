@@ -27,7 +27,7 @@ export const AiIngestionPipelineModal: React.FC<AiIngestionPipelineModalProps> =
   isOpen,
   onClose,
   onComplete,
-  patientName = 'Michael Turner',
+  patientName = 'Rajesh Kumar',
   modality = 'XR - Chest Radiography',
 }) => {
   const [currentStage, setCurrentStage] = useState(0);
