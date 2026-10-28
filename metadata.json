@@ -1,0 +1,6 @@
+{
+  "name": "MedVision AI",
+  "description": "Clinical intelligence platform for modern radiology with explainable AI diagnostics and real-time Grad-CAM visualization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

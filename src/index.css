@@ -1,0 +1,175 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    background: #edf2f5;
+    color: #e5e5e5;
+  }
+}
+
+.app-shell {
+  min-height: 100vh;
+  background: #0c1117;
+}
+
+[data-theme='dark'] [class*='bg-[#050505]'] {
+  background-color: #0c1219 !important;
+}
+
+[data-theme='dark'] [class*='bg-[#080808]'],
+[data-theme='dark'] [class*='bg-[#0a0a0a]'] {
+  background-color: #141b23 !important;
+}
+
+[data-theme='dark'] [class*='bg-[#111111]'] {
+  background-color: #1b2530 !important;
+}
+
+[data-theme='dark'] [class*='border-[#1a1a1a]'],
+[data-theme='dark'] [class*='border-[#262626]'] {
+  border-color: #27323e !important;
+}
+
+[data-theme='dark'] [class*='text-[#737373]'],
+[data-theme='dark'] [class*='text-[#a3a3a3]'] {
+  color: #a4b0bd !important;
+}
+
+[data-theme='light'] {
+  color: #1f2937;
+  background: #edf2f5;
+}
+
+[data-theme='light'] [class*='bg-[#050505]'],
+[data-theme='light'] [class*='bg-[#080808]'],
+[data-theme='light'] [class*='bg-[#0a0a0a]'],
+[data-theme='light'] [class*='bg-[#111111]'] {
+  background-color: rgba(255, 255, 255, 0.86) !important;
+}
+
+[data-theme='light'] [class*='text-white'],
+[data-theme='light'] [class*='text-[#e5e5e5]'],
+[data-theme='light'] [class*='text-[#f5f2ed]'],
+[data-theme='light'] [class*='text-[#a3a3a3]'],
+[data-theme='light'] [class*='text-[#737373]'] {
+  color: #334155 !important;
+}
+
+[data-theme='light'] [class*='border-[#1a1a1a]'],
+[data-theme='light'] [class*='border-[#262626]'] {
+  border-color: #d7e0e5 !important;
+}
+
+[data-theme='light'] input,
+[data-theme='light'] textarea,
+[data-theme='light'] select {
+  color: #1f2937;
+}
+
+.app-shell,
+body {
+  transition: none;
+}
+
+.app-shell *:not(.animate-spin),
+.app-shell *:not(.animate-spin)::before,
+.app-shell *:not(.animate-spin)::after {
+  animation: none !important;
+}
+
+.app-shell .animate-spin {
+  animation: spin 1s linear infinite !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.font-serif {
+  font-family: 'Instrument Serif', Georgia, serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom sleek scrollbar for Sophisticated Dark theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a1a1a;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #262626;
+}
+
+/* Print Styles for High-Quality Medical Diagnostic Reports */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-size: 11pt !important;
+  }
+
+  /* Hide navigation, sidebars, headers, and UI controls when printing */
+  header,
+  nav,
+  aside,
+  .no-print,
+  button,
+  input,
+  .print-hidden {
+    display: none !important;
+  }
+
+  /* Force printable report container to expand cleanly */
+  .printable-report-area {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    background-color: #ffffff !important;
+    color: #111111 !important;
+  }
+
+  .printable-report-area * {
+    color: #111111 !important;
+    border-color: #d1d5db !important;
+    background-color: transparent !important;
+  }
+
+  .printable-report-header {
+    border-bottom: 2px solid #f27d26 !important;
+    padding-bottom: 12px !important;
+  }
+
+  .printable-accent-box {
+    border: 1px solid #f27d26 !important;
+    background-color: #fcf8f5 !important;
+  }
+
+  /* Page break rules */
+  .page-break-inside-avoid {
+    page-break-inside: avoid !important;
+  }
+}
